@@ -9,26 +9,6 @@ GrabMate is a **voice-activated assistant** tailored for driver-partners. Design
 
 ---
 
-### 💻 Model Training vs Voice Assistant Usage
-
-This project consists of two main components:
-
-1. NLP Model Training (_train_model.py_)
-- This script is used to train the intent classification model using the dataset.
-- It only needs to be run once when:
-  - You are launching the project for the first time, or
-  - You’ve made changes to the dataset or the model architecture.
-- The trained model will be saved as a file (e.g., intent_model.pkl or similar).
-
-2. Voice-to-Text Assistant (_grabmate_voice_assistant.py_)
-- This is the main script used for voice-based interactions.
-- It uses the pre-trained model saved by the training script to classify the transcribed speech.
-- You do not need to retrain the model every time you run this file, unless changes have been made to the model or dataset.
-
-__Make sure the trained model file is present in your working directory before running the voice assistant script.__
-
----
-
 ### ⚙️ How It Works
 
 - 🎤 Record Audio: User speaks a short command (~5 seconds).
